@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 300px;
+            height: 100%;
+            background-color: antiquewhite;
+            box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+            margin: 0 auto;
+
+        }
+        .form-handler{
+          display: grid;
+          width: 85%;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <form class="form-handler">
+
+            <label for="">Name :</label>
+            <input type="text">
+            <br>
+            <label for="">Bio</label>
+            <textarea name="" id=""></textarea>
+            <br><br>
+            <label for="">Photo</label>
+            <input type="file">
+            <br><br>
+            <label for="gender">Gender :</label>
+            <select name="gender" id="gender">
+                <option value="gender">Male</option>
+                <option value="gender">Female</option>
+                <option value="gender">Other</option>
+            </select>
+            <br><br>
+            <label for="">Birthday :</label>
+            <input type="date"><br><br>
+            <label for="">Password :</label>
+            <input type="password">
+            <br>
+        </form>
+    </div>
+</body>
+</html>
