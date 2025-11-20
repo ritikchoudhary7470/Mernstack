@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.container {
+    width: 100%;
+}
+
+#main-nav {
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+#main-ul {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#main-ul-li-1 {
+    font-weight: bold;
+    font-size: large;
+}
+
+#main-ul-li-2 {
+    font-size: small;
+}
+
+.main-content-1 {
+    background-image: url(./img/banner-light.png);
+    /* height: 300px; */
+    width: 100%;
+
+}
+
+.main-contant-data {
+    width: 30%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* background-color: aqua; */
+    position: relative;
+    left: 250px;
+
+}
+
+#main-content-h1 {
+    position: relative;
+    /* top: 60px; */
+}
+
+#main-btn {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    width: 60%;
+    padding: 5px 10px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    border: none;
+}
+
+.main-content-2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+/* .item{
+    width: 20%;
+    height: 200px;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+} */
+
+.item img {
+    width: 200px;
+    height: 150px;
+    position: relative;
+    left: 20px;
+    top: 10px;
+}
+
+#item-para1{
+    width: 100%;
+    margin: 0 auto;
+    font-size: x-large;
+    font-weight: bold;
+    position: relative;
+    left: 25px;
+}
+#item-para2 {
+    font-size: small;
+    position: relative;
+    left: 30px;
+    margin-top: 10px;
+
+}
+
+.main-content-3 {
+    margin-left: 75px;
+    margin-bottom: 25px;
+}
+
+.main-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.main-footer1 {
+    width: 50%;
+}
+
+#main-para1 {
+    font-weight: bold;
+}
+
+#main-para3 {
+    font-weight: bold;
+    font-size: x-large;
+}
+
+#main-ul {
+    display: flex;
+    font-size: small;
+    margin-top: 8px;
+}
