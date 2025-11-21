@@ -1,0 +1,273 @@
+body{
+ font-family: "MiSans", sans-serif;
+}
+
+.container{
+  width: 100%;
+  height: 100vh;
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  height: 50px;
+  width: 99%;
+  top: 0;
+  position: fixed;
+  background-color: white;
+}
+
+.nav-left{
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.nav-right{
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.nav-items{
+  margin-top: .9em;
+  font-size: .9em;
+}
+
+.main-img-sec{
+  background-image: url(./images/contant2.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+
+}
+.img-section{
+  width: 100%;
+  margin: 0 auto;
+  z-index: -1;
+ 
+}
+
+.phone-name{
+  position: absolute;
+ bottom: 60%;
+ color: white;
+ font-size: 2em;
+ font-weight: bold;
+ left: 10%;
+}
+.phone-details{
+  position: absolute;
+ bottom: 50%;
+ width: 30%;
+ color: white;
+ font-size: 20px;
+ font-weight: 700;
+ left: 10%;
+}
+.section-three{
+  width: 90%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+.three-heading{
+  display: flex;
+  justify-content: center;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+.section-three-items{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.img-and-txt{
+  display: flex;
+  justify-content: space;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.img-and-txt img{
+   transition: transform 0.4s ease-in;
+}
+
+.img-and-txt img:hover{
+  transform: scale(1.1);
+  z-index: -1;
+}
+
+.img-content{
+  display: flex;
+  margin-left:20% ;
+  justify-content:center;
+  flex-direction: column;
+}
+.img-content-p1{
+  font-size: 1.5em;
+  font-weight: 700;
+}
+.detailed-content{
+  margin-left: 20%;
+  font-weight: 600;
+}
+
+button{
+  background-color: black;
+  color: white;
+  font-weight: 600;
+  height: 2em;
+  /* margin-left: 15%; */
+  width: 70%;
+  border: 0;
+  border-radius: 8px;
+}
+.section4{
+  width: 100%;
+  height: 60vh;
+  /* background-color:saddlebrown ; */
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+.main{
+  width: 90%;
+  margin: 0 auto;
+  /* background-color: rgb(31, 184, 184); */
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.main-item{
+  width: 22%;
+  /* background-color: rgb(176, 131, 131) ; */
+  margin: 0 auto;
+  flex-wrap: wrap;
+
+}
+
+.section5{
+  width: 100%;
+  height: 70vh;
+  /* background-color:saddlebrown ; */
+  /* margin-top: 20px; */
+}
+.section5 h1{
+    width: 20%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    /* background-color: antiquewhite; */
+}
+.main1{
+  width: 90%;
+  margin: 0 auto;
+  /* background-color: rgb(31, 184, 184); */
+  display: flex;
+}
+.main1-contant{
+  width: 30%;
+  /* background-color: rgb(176, 131, 131) ; */
+  margin: 0 auto;
+  
+}
+.main1-contant img{
+    width: 100%;
+    height: auto;
+}
+
+
+/* /footer  */
+
+.footer{
+    background-color: #ffffff;
+    border-top: 1px solid #ddd;
+    padding: 40px 0;
+}
+.main-4{
+width: 90%;
+display: flex;
+justify-content: space-evenly;
+margin-bottom: 30px;
+}
+.footer-column h3{
+    color: #333;
+    font-weight: bold;
+    font-size: 16px;
+}
+.footer-column ul{
+    list-style: none;
+
+}
+.footer-column li{
+    color: #555;
+    font-size: 13px;
+    margin: 6px 0;
+}
+.footer-column li:hover{
+    color: #000;
+    text-decoration: underline;
+}
+.footer-bottom{
+    border-top: 1px solid #ddd;
+
+}
+.footer-bottom p{
+    font-size: 12px;
+    color: #555;
+}
+.bt-footer{
+    display: flex;
+     justify-content: space-evenly;
+     margin-top: 25px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .container{
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+}
+  .nav-items{
+    height: 40px;
+    display: none;
+  }
+  .img-and-txt img{
+    width: 100%;
+    height: auto;
+  }
+  .main-img-sec{
+  background-image: url(images/contant2.jpg);
+ width: 100%;
+ height: 100%;
+ flex-wrap: wrap;
+}
+
+.main{
+  width: 90%;
+  margin: 0 auto;
+  /* background-color: rgb(31, 184, 184); */
+  /* display: flex; */
+  flex-wrap: wrap;
+}
+.main-item{
+  width: 22%;
+  /* background-color: rgb(176, 131, 131) ; */
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+.main1{
+  width:100%;
+  /* background-color: rgb(176, 131, 131) ; */
+  margin: 0 auto;
+  flex-wrap: wrap;
+  
+}
+.main1-contant{
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+}
+}
