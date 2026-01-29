@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* NAVBAR */
+.navbar {
+  width: 100%;
+  min-height: 70px;
+  background: linear-gradient(90deg, #597758, #676d79);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* LEFT MENU */
+.nav-left ul {
+  list-style: none;
+  display: flex;
+  gap: 35px;
+}
+
+.nav-left a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  position: relative;
+}
+
+/* underline animation */
+.nav-left a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: #fff;
+  left: 0;
+  bottom: -5px;
+  transition: 0.3s;
+}
+
+.nav-left a:hover::after {
+  width: 100%;
+}
+
+.cart {
+  background: transparent;
+  border: 1px solid #c1c5c2;
+  color: #fff;
+  padding: 6px 14px;
+  border-radius: 20px;
+}
+
+/* CENTER SEARCH */
+.nav-center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-center input {
+  width: 450px;
+  max-width: 100%;
+  padding: 8px 14px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+/* RIGHT BUTTONS */
+.nav-right {
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  padding: 8px 18px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.login {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.login:hover {
+  background: #fff;
+  color: #2563eb;
+}
+
+.signup {
+  background: #fff;
+  color: #03153b;
+}
+
+.signup:hover {
+  background: #dbeafe;
+}
+
+/* ========================= */
+/* 📱 RESPONSIVE DESIGN */
+/* ========================= */
+
+@media (max-width: 1024px) {
+  .nav-center input {
+    width: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 20px;
+    gap: 15px;
+  }
+
+  /* Left menu center */
+  .nav-left ul {
+    flex-direction: row;
+    justify-content: center;
+    gap: 25px;
+  }
+
+  /* Search full width */
+  .nav-center {
+    width: 100%;
+  }
+
+  .nav-center input {
+    width: 100%;
+  }
+
+  /* Buttons center */
+  .nav-right {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-left ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-right {
+    width: 100%;
+  }
+}
